@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: spud-stories
-          image: armory/spud-stories:v1
+          image: armory/spud-stories:sha-b4236d6
           args:
             - --config
             - /opt/spud-stories/config/spudstories.yml
