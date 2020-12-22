@@ -16,5 +16,5 @@ spec:
     spec:
       containers:
         - name: traffic-gen
-          image: armory/traffic-generator:sha-a9da9a4
+          image: armory/traffic-generator:sha-f53dc64
           args: ["--url", "http://$(SPUD_STORIES_SERVICE_HOST):$(SPUD_STORIES_SERVICE_PORT)"]
