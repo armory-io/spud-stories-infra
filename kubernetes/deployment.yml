@@ -6,6 +6,7 @@ metadata:
     app: spud-stories
     environment: production
 spec:
+  minReadySeconds: 60 
   strategy:
     type: RollingUpdate
     rollingUpdate:
