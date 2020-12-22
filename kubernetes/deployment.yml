@@ -8,11 +8,8 @@ metadata:
 spec:
   strategy:
     type: RollingUpdate
-    rollingParams:
-      updatePeriodSeconds: 20
-      intervalSeconds: 5 
-      timeoutSeconds: 120 
-      maxSurge: "20%" 
+    rollingUpdate:
+      maxSurge: "5%" 
       maxUnavailable: "5%" 
   replicas: 6
   selector:
