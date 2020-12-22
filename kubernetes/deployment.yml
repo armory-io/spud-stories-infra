@@ -21,14 +21,10 @@ spec:
         - name: spud-stories
           image: armory/spud-stories:sha-ab23c9a
           args:
-            - --config
-            - /opt/spud-stories/config/spudstories.yml
+            - --num-objects
+            - "1020"
+            - --object-size
+            - "1024"
+
           ports:
             - containerPort: 3000
-          volumeMounts:
-            - mountPath: /opt/spud-stories/config
-              name: config
-      volumes:
-        - name: config
-          configMap:
-            name: spud-stories-config
