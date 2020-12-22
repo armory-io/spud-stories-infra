@@ -22,9 +22,9 @@ spec:
           image: armory/spud-stories:sha-ab23c9a
           args:
             - --num-objects
-            - "1020"
+            - "2000"
             - --object-size
-            - "1024"
+            - "2048"
 
           ports:
             - containerPort: 3000
