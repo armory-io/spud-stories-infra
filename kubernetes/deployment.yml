@@ -7,13 +7,13 @@ metadata:
     environment: production
 spec:
   strategy:
-  type: Rolling
-  rollingParams:
-    updatePeriodSeconds: 20
-    intervalSeconds: 5 
-    timeoutSeconds: 120 
-    maxSurge: "20%" 
-    maxUnavailable: "5%" 
+    type: Rolling
+    rollingParams:
+      updatePeriodSeconds: 20
+      intervalSeconds: 5 
+      timeoutSeconds: 120 
+      maxSurge: "20%" 
+      maxUnavailable: "5%" 
   replicas: 6
   selector:
     matchLabels:
