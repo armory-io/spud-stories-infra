@@ -7,7 +7,7 @@ metadata:
     environment: production
 spec:
   revisionHistoryLimit: 3
-  minReadySeconds: 60 
+  minReadySeconds: 30 
   strategy:
     type: RollingUpdate
     rollingUpdate:
