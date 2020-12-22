@@ -17,4 +17,4 @@ spec:
       containers:
         - name: traffic-gen
           image: armory/traffic-generator:sha-a9da9a4
-          args: ["--url", "http://$(SPUD_STORIES_SERVICE_HOST):$(SPUD_STORIES_SERVICE_PORT)", "--max-requests", "100", "--request-interval", "500ms"]
+          args: ["--url", "http://$(SPUD_STORIES_SERVICE_HOST):$(SPUD_STORIES_SERVICE_PORT)", "--request-interval", "500ms"]
