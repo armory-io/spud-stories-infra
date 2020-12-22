@@ -4,5 +4,5 @@ metadata:
   name: spud-stories-config
 data:
   spudstories.yml: |
-    objects: 1000
+    objects: 4000
     size: 1024
