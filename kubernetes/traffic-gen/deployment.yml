@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spud-traffic-gen
+  labels:
+    app: spud-traffic-gen
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spud-traffic-gen
+  template:
+    metadata:
+      labels:
+        app: spud-traffic-gen
+    spec:
+      containers:
+        - name: traffic-gen
+          image: armory/traffic-generator:sha-a9da9a4
+          args: ["--url", "http://$(SPUD_STORIES_SERVICE_HOST):$(SPUD_STORIES_SERVICE_PORT)", "--max-requests", "100", "--request-interval", "100"]
