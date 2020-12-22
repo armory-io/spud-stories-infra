@@ -30,7 +30,7 @@ spec:
           image: armory/spud-stories:sha-ab23c9a
           args:
             - --num-objects
-            - "4500"
+            - "4250"
             - --object-size
             - "2048"
           ports:
