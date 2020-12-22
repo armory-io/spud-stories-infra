@@ -1,0 +1,20 @@
+name: Canary Spud Stories
+
+on:
+  push:
+    branches:
+      - "master"
+    paths:
+      - "kubernetes/spud-stories/**"
+
+jobs:
+  canary:
+    name: Canary Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - run: Run Canary Analysis
+        uses: armory-io/canary-analysis-action@master
+        with:
+          control: kube_deployment:spud-stories
+          experiment: kube_deployment:spud-stories
+          kayentaUrl: http://kayenta.armory.io
