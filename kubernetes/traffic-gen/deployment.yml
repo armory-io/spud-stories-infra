@@ -5,7 +5,7 @@ metadata:
   labels:
     app: spud-traffic-gen
 spec:
-  replicas: 3 
+  replicas: 4 
   selector:
     matchLabels:
       app: spud-traffic-gen
