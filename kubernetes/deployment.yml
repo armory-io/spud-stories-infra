@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
         - name: spud-stories
-          image: armory/spud-stories:sha-4d267a1
+          image: armory/spud-stories:sha-4262e6f
           args:
             - --num-objects
             - "8000"
