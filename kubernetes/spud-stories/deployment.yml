@@ -7,12 +7,12 @@ metadata:
     environment: production
 spec:
   revisionHistoryLimit: 3
-  minReadySeconds: 60 
+  minReadySeconds: 60
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: "5%" 
-      maxUnavailable: "5%" 
+      maxSurge: "5%"
+      maxUnavailable: "5%"
   replicas: 6
   selector:
     matchLabels:
@@ -26,10 +26,10 @@ spec:
     spec:
       containers:
         - name: spud-stories
-          image: armory/spud-stories:sha-ab23c9a
+          image: armory/spud-stories:sha-87d1564
           args:
             - --num-objects
-            - "8000"
+            - "16000"
             - --object-size
             - "2048"
           ports:
