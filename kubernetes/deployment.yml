@@ -29,9 +29,9 @@ spec:
           image: armory/spud-stories:sha-87d1564
           args:
             - --num-objects
-            - "8000"
+            - "16000"
             - --object-size
-            - "1024"
+            - "2028"
           ports:
             - containerPort: 3000
           readinessProbe:
